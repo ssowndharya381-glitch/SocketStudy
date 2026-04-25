@@ -55,13 +55,30 @@ Socket programming finds applications in various domains, including web developm
 
 PROGRAM: 
 
-Server:  
-<img width="437" height="221" alt="image" src="https://github.com/user-attachments/assets/b129a70e-c40a-4df2-9a38-f63cf6a27bf0" />
+Server: 
+
+import socket
+s = socket.socket()
+s.bind(('localhost', 8000))
+s.listen(1)
+print("Server waiting for connection...")
+c, addr = s.accept()
+print("Connected with", addr)
+while True:
+	msg = input("Enter a data: ")
+    c.send(msg.encode())
+	ack = c.recv(1024).decode()
+    print(ack)
+	
 
 client:  
-<img width="1168" height="223" alt="Screenshot 2026-04-25 101045" src="https://github.com/user-attachments/assets/712795ca-194c-495f-ac09-7479d8261107" />
-
-
+import socket
+s = socket.socket()
+s.connect(('localhost', 8000))
+while True:
+    data = s.recv(1024).decode()
+    print(data)
+ s.send("Acknowledgement Received".encode())
 
 OUTPUT:
 <img width="1708" height="564" alt="Screenshot 2026-04-24 143611" src="https://github.com/user-attachments/assets/d82cf611-91d7-43fd-8eb7-57370fa65384" />
