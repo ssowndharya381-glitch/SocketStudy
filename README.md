@@ -81,9 +81,8 @@ while True:
  s.send("Acknowledgement Received".encode())  
 ```
 OUTPUT:
-<img width="1708" height="564" alt="Screenshot 2026-04-24 143611" src="https://github.com/user-attachments/assets/d82cf611-91d7-43fd-8eb7-57370fa65384" />
-
-<img width="1454" height="165" alt="Screenshot 2026-04-24 143639" src="https://github.com/user-attachments/assets/cc67ade0-5a50-44a7-aa74-3ae4e9c46eed" />
+c:\Users\my computer\Pictures\Screenshots\Screenshot 2026-04-24 143611.png
+c:\Users\my computer\Pictures\Screenshots\Screenshot 2026-04-24 143639.png
 
 
 
