@@ -69,9 +69,9 @@ while True:
     c.send(msg.encode())  
 	ack = c.recv(1024).decode()  
     print(ack)  
-	```  
+
 client.py  
-```   
+   
 import socket    
 s = socket.socket()    
 s.connect(('localhost', 8000))    
@@ -81,9 +81,9 @@ while True:
  s.send("Acknowledgement Received".encode())  
 ```
 ## OUTPUT:
-SocketStudy/Screenshot 2026-04-24 143611.png
-SocketStudy/Screenshot 2026-04-24 143639.png
+![alt text](<Screenshot 2026-04-24 143639.png>)
 
+![alt text](<Screenshot 2026-04-24 143611.png>)
 
 ## Result:
 Thus the study of Socket Programming Completed Successfully
