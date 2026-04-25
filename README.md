@@ -55,7 +55,7 @@ Socket programming finds applications in various domains, including web developm
 
 ## PROGRAM
 
-## SERVER 
+server.py
 ```
 import socket  
 s = socket.socket()  
@@ -70,7 +70,7 @@ while True:
 	ack = c.recv(1024).decode()  
     print(ack)  
 	```  
-## CLIENT  
+client.py  
 ```   
 import socket    
 s = socket.socket()    
