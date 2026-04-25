@@ -70,20 +70,19 @@ while True:
 	ack = c.recv(1024).decode()  
     print(ack)  
 	```  
-client: 
+client:   
 ```   
-import socket  
-s = socket.socket()  
-s.connect(('localhost', 8000))  
-while True:  
+import socket    
+s = socket.socket()    
+s.connect(('localhost', 8000))    
+while True:   
     data = s.recv(1024).decode()  
     print(data)  
  s.send("Acknowledgement Received".encode())  
 ```
 OUTPUT:
-c:\Users\my computer\Pictures\Screenshots\Screenshot 2026-04-24 143611.png
-c:\Users\my computer\Pictures\Screenshots\Screenshot 2026-04-24 143639.png
-
+SocketStudy/Screenshot 2026-04-24 143611.png
+SocketStudy/Screenshot 2026-04-24 143639.png
 
 
 ## Result:
